@@ -112,12 +112,8 @@ def Analyzing_Report(filename):
         print('Median score: ' + str(median))
 
         filename_write = filename[0:6] + '_grades.txt'
-
-        print(list_diem_class)
-        print(list_ma_sv)
-
+        
         dict_write = dict(zip(list_ma_sv,list_diem_class))
-        print(dict_write)
         
     with open(filename_write, 'w') as fileobjwrite:
         for keys,values in dict_write.items():
@@ -174,4 +170,59 @@ Lowest score: 66
 Range of scores: 34
 
 Median score: 76
+```
+
+3. Finally, generate a “results” file that contains the detailed results for each student in your class. Each line of this file should contain the student’s ID number, a comma, and then their grade. You should name this file based on the original filename supplied—for example, if the user wants to analyze “class1.txt” you should store the results in a file named “class1_grades.txt”.
+```
+    dict_write = dict(zip(list_ma_sv,list_diem_class))
+        
+    with open(filename_write, 'w') as fileobjwrite:
+        for keys,values in dict_write.items():
+            fileobjwrite.write(keys + ',' + str(values) + '\n')
+```            
+- Here is a sample running of your program for the first two data files.
+```
+# this is what class1_grades.txt should look like                               
+N00000001,59
+N00000002,70
+N00000003,84
+N00000004,73
+N00000005,83
+N00000006,66
+N00000007,88
+N00000008,67
+N00000009,86
+N00000010,73
+N00000011,86
+N00000012,73
+N00000013,73
+N00000014,78
+N00000015,72
+N00000016,91
+N00000017,66
+N00000018,78
+N00000019,78
+N00000020,68
+# this is what class2_grades.txt should look like
+N00000021,68
+N00000022,76
+N00000024,73
+N00000026,72
+N00000028,73
+N00000029,87
+N00000030,82
+N00000031,76
+N00000032,87
+N00000033,77
+N00000034,69
+N00000036,77
+N00000037,75
+N00000038,73
+N00000039,66
+N00000040,73
+N00000041,91
+N00000042,100
+N00000043,86
+N00000044,90
+N00000045,67
 ```
