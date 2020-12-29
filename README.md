@@ -125,3 +125,53 @@ def Analyzing_Report(filename):
             
 Analyzing_Report(filename)
 ```
+- Here is a sample running of the program for class1
+```
+Enter a class to grade (i.e. class1 for class1.txt): class1
+Successfully opened class1.txt
+**** ANALYZING ****
+No errors found!
+**** REPORT ****
+Total valid lines of data: 20
+Total invalid lines of data: 0 
+Mean (average) score: 75.55
+Highest score: 91
+Lowest score: 59
+Range of scores: 32
+Median score: 73.0
+```
+- Here is a sample running of the program for class2
+```
+Enter a class file to grade: class2.txt
+Succeessfully opened  class2.txt
+
+**** ANALYZING ****
+
+Invalid line of data: does not contain exactly 26 values:
+N00000023,,A,D,D,C,B,D,A,C,C,,C,,B,A,C,B,D,A,C,A,A
+
+Invalid line of data: N# is invalid
+N0000002,B,A,D,D,C,B,D,A,C,D,D,D,A,,A,C,D,,A,C,A,A,B,D,D
+
+Invalid line of data: N# is invalid
+NA0000027,B,A,D,D,,B,,A,C,B,D,B,A,,A,C,B,D,A,,A,A,B,D,D
+
+Invalid line of data: does not contain exactly 26 values:
+N00000035,B,A,D,D,B,B,,A,C,,D,B,A,B,A,A,B,D,A,C,A,C,B,D,D,A,A
+
+**** REPORT ****
+
+Total valid lines of data: 21
+
+Total invalid lines of data: 4
+
+Mean (average) score: 77.9
+
+Highest score: 100
+
+Lowest score: 66
+
+Range of scores: 34
+
+Median score: 76
+```
