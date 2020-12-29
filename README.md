@@ -20,3 +20,10 @@ try:
 except:
   print('File cannot be found')
 ```
+- Here is a sample running of the program
+```
+Enter a class file to grade (i.e. class1 for class1.txt): foobar
+File cannot be found.
+Enter a class file to grade (i.e. class1 for class1.txt): class1
+Successfully opened class1.txt
+```
