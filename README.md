@@ -13,9 +13,9 @@ I will write a program to:
 - Next, write a program that lets the user type in the name of a file. Attempt to open the supplied file for reading access. If the file exists you can print out a confirmation message. If the file doesn’t exist you should tell the user that the file cannot be found and prompt them again.
 - Use a try/except block to do this:
 
-`filename = input('Enter a class file to grade: ')
- try:
+`filename = input('Enter a class file to grade: ')`
+```try:
     with open(filename) as fileobj:
         print('Succeessfully opened  ' + filename + '\n')
  except:
-    print('File cannot be found')`
+    print('File cannot be found')```
