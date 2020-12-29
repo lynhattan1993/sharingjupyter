@@ -1,4 +1,4 @@
-# Project title: GRADES THE EXAMS
+# Project: GRADE THE EXAMS
 ## Introduction
 
 I will write a program to:
