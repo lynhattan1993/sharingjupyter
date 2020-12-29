@@ -51,7 +51,7 @@ def Analyzing_Report(filename):
         print('**** ANALYZING ****' + '\n')
         for line in fileobj:
             total_lines += 1
-            line.rstrip()
+            line = line.rstrip()
             list_line = line.split(',')
             match = re.fullmatch(r'N[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]',list_line[0])
             
@@ -61,7 +61,6 @@ def Analyzing_Report(filename):
             if len(list_line) == 26 and match:             
                 total_valid_lines += 1
                 list_line_sub = list_line[1:]
-                list_line_sub[-1] = list_line_sub[-1][0]
         
                 list_ma_sv.append(list_line[0])
                 
